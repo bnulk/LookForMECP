@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "配置文件 1": {
+      "commandName": "Project",
+      "commandLineArgs": "E:\\备份\\程序\\2022\\ChemKun\\test\\kun.gjf",
+      "workingDirectory": "E:\\备份\\程序\\2022\\ChemKun\\test"
+    }
+  }
+}

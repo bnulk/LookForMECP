@@ -1,0 +1,25 @@
+%mem=64MB
+%chk=E:\ChemKun\test\LiuKun1.chk
+#p freq uhf/sto-3g scrf=check guess=tcheck geom=(connectivity,allcheck)
+genchk
+
+T1
+
+0 3
+ H              
+ N                  1            B1
+ C                  2            B2    1            A1
+ O                  3            B3    2            A2    1            D1    0
+
+   B1             1.05639949
+   B2             1.43209848
+   B3             1.25230440
+   A1           105.66254613
+   A2           101.92000000
+   D1           180.00000000
+
+ 1 2 1.0
+ 2 3 1.0
+ 3 4 2.0
+ 4
+

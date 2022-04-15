@@ -1,0 +1,178 @@
+PROGRAM ChemKun, Version 0.11
+Liu Kun  2018-06-10
+
+2018/8/16 22:33:40
+*********************************************
+Author Information: Liu Kun, College of Chemistry, Tianjin Normal University, Tianjin 300387, China
+Email: bnulk@foxmail.com
+You can obtain the newest version of the program by contacting the author.
+*********************************************
+
+bnulk@foxmail.com-Cmd Info
+*********************************************
+
+currentOS: Microsoft Windows NT 6.2.9200.0
+currentDirectory: E:\ChemKun\ChemKun\bin\Debug\netcoreapp2.0
+inputName: E:\ChemKun\test\kun.gjf
+outputName: E:\ChemKun\test\kun.kun
+
+bnulk@foxmail.com-Input Info
+*********************************************
+
+Associated program is gaussian
+Cmd format is g09
+Task is mecp
+InputList: 
+%mem=64mb
+%chk=LiuKun1.chk LiuKun2.chk
+#p hf/sto-3g scf=maxcycle=999 {task=mecp method=sqp hessianN=5 stepSize=0.1 sqp_tao=0.9}
+
+T1
+
+0 1 3
+H
+N                  1            B1
+C                  2            B2    1            A1
+O                  3            B3    2            A2    1            D1    0
+
+B1     =     1.050704
+B2     =     1.362634
+B3     =     1.234184
+A1     =     107.745715
+A2     =     134.097937
+D1     =     180.048437
+
+
+
+bnulk@foxmail.com-TaskAndKeyword Info
+*********************************************
+
+<MECP>
+  calTyp=opt  coordinateType=this
+  method=sqp  scfTyp1=hftyp  scfTyp2=hftyp  cyc=100
+  stepSize=0.1  guessHessian=bfgs  hessianN=5
+  energycon=1E-05  maxcon=0.001  rmscon=0.0005
+  Lambda=1  isReadFirst=False
+  judgement=global
+  sqp_tao=0.9
+</MECP>
+
+bnulk@foxmail.com-MECP Info
+*********************************************
+
+MECP method is sqp
+##########     I is:0     ##########
+The Energy of the First State is:-165.4566145
+The Energy of the Second State is:-165.4565979
+The Energy Difference between the Two States is:-1.66000000092481E-05
+Lambda is:1
+Stepsize is:0.1
+----------
+I          detEnergy          Lambda                AverEnergy                  MaxForce            RMSForce            
+0         -1.66E-05           1                   -165.4566062                  0.045438            0.030624            
+         Item               Value         Threshold         Converged?
+ Delta Energy            -1.66000E-005    1E-05                 No             
+ Maximum KKT Force       0.045438         0.001                 No             
+ RMS KKT Force           0.030624         0.0005                No             
+##########     I is:1     ##########
+The Energy of the First State is:-165.4566129
+The Energy of the Second State is:-165.4565987
+The Energy Difference between the Two States is:-1.42000000096232E-05
+Lambda is:0.67623976277716
+Stepsize is:0.1
+----------
+I          detEnergy          Lambda                AverEnergy                  MaxForce            RMSForce            
+0         -1.66E-05           1                   -165.4566062                  0.045438            0.030624            
+1         -1.42E-05           0.67623976          -165.4566058                  0.000453            0.000217            
+         Item               Value         Threshold         Converged?
+ Delta Energy            -1.42000E-005    1E-05                 No             
+ Maximum KKT Force       0.000453         0.001                 Yes            
+ RMS KKT Force           0.000217         0.0005                Yes            
+##########     I is:2     ##########
+The Energy of the First State is:-165.4566113
+The Energy of the Second State is:-165.4565996
+The Energy Difference between the Two States is:-1.16999999875134E-05
+Lambda is:0.676224583737313
+Stepsize is:0.1
+----------
+I          detEnergy          Lambda                AverEnergy                  MaxForce            RMSForce            
+0         -1.66E-05           1                   -165.4566062                  0.045438            0.030624            
+1         -1.42E-05           0.67623976          -165.4566058                  0.000453            0.000217            
+2         -1.17E-05           0.67622458          -165.45660545                 0.000403            0.000193            
+         Item               Value         Threshold         Converged?
+ Delta Energy            -1.17000E-005    1E-05                 No             
+ Maximum KKT Force       0.000403         0.001                 Yes            
+ RMS KKT Force           0.000193         0.0005                Yes            
+##########     I is:3     ##########
+The Energy of the First State is:-165.4566107
+The Energy of the Second State is:-165.4565999
+The Energy Difference between the Two States is:-1.0800000012523E-05
+Lambda is:0.676211439621105
+Stepsize is:0.1
+----------
+I          detEnergy          Lambda                AverEnergy                  MaxForce            RMSForce            
+0         -1.66E-05           1                   -165.4566062                  0.045438            0.030624            
+1         -1.42E-05           0.67623976          -165.4566058                  0.000453            0.000217            
+2         -1.17E-05           0.67622458          -165.45660545                 0.000403            0.000193            
+3         -1.08E-05           0.67621144          -165.4566053                  0.000364            0.000175            
+         Item               Value         Threshold         Converged?
+ Delta Energy            -1.08000E-005    1E-05                 No             
+ Maximum KKT Force       0.000364         0.001                 Yes            
+ RMS KKT Force           0.000175         0.0005                Yes            
+##########     I is:4     ##########
+The Energy of the First State is:-165.45661
+The Energy of the Second State is:-165.4566004
+The Energy Difference between the Two States is:-9.5999999984997E-06
+Lambda is:0.676213161730498
+Stepsize is:0.1
+----------
+I          detEnergy          Lambda                AverEnergy                  MaxForce            RMSForce            
+0         -1.66E-05           1                   -165.4566062                  0.045438            0.030624            
+1         -1.42E-05           0.67623976          -165.4566058                  0.000453            0.000217            
+2         -1.17E-05           0.67622458          -165.45660545                 0.000403            0.000193            
+3         -1.08E-05           0.67621144          -165.4566053                  0.000364            0.000175            
+4         -9.6E-06            0.67621316          -165.4566052                  0.000337            0.000161            
+         Item               Value         Threshold         Converged?
+ Delta Energy            -9.60000E-006    1E-05                 Yes            
+ Maximum KKT Force       0.000337         0.001                 Yes            
+ RMS KKT Force           0.000161         0.0005                Yes            
+
+bnulk@foxmail.com-MECP Result
+*********************************************
+
+Energy = -165.4566051
+Lambda = 0.676213161730498
+-Lambda/(1-Lambda) = -2.08845166574577
+Gradient ratio between two states: 
+    B1     =     smallGradient
+    B2     =     -2.08     
+    B3     =     -2.06     
+    A1     =     smallGradient
+    A2     =     -2.1      
+    D1     =     smallGradient
+
+bnulk@foxmail.com-MECP Freq
+*********************************************
+
+borderedHessian:
+   0.0000000000E+000  -2.9298070220E-003  -1.2231043699E-001  -1.3430300116E-001   2.0903896429E-002   1.4085805739E-001  -1.3636855230E-007
+  -2.9298070220E-003   5.2226267012E-001  -1.1765499984E-002  -1.2336986754E-002   4.8509123679E-002   7.5617569938E-003   0.0000000000E+000
+  -1.2231043699E-001  -1.1765499984E-002   3.4553026901E-001   1.0107096119E-001   1.0603260910E-001   1.8602411475E-001   0.0000000000E+000
+  -1.3430300116E-001  -1.2336986754E-002   1.0107096119E-001   9.3774945048E-001   8.1508803644E-003   1.5183053020E-001   0.0000000000E+000
+   2.0903896429E-002   4.8509123679E-002   1.0603260910E-001   8.1508803644E-003   2.2861681193E-001   2.6648771457E-002   0.0000000000E+000
+   1.4085805739E-001   7.5617569938E-003   1.8602411475E-001   1.5183053020E-001   2.6648771457E-002   2.2526613290E-001   0.0000000000E+000
+  -1.3636855230E-007   0.0000000000E+000   0.0000000000E+000   0.0000000000E+000   0.0000000000E+000   0.0000000000E+000   6.5915294399E-003
+detBorderedHessian:
+        5.32502E-001        4.61292E-001        2.40256E-001        1.80315E-001       -1.70192E-001
+        1.01525E+000        6.59153E-003
+
+detDiagonal:
+       -8.58377E-006       -7.82437E-003       -8.85951E-003       -2.21381E-003       -1.83872E-003
+       -1.21200E-005
+
+*****************************************************************
+
+Unfortunately, the KKT point is not a real minimum.
+
+*****************************************************************
+

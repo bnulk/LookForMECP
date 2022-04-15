@@ -1,0 +1,20 @@
+%mem=1000mb
+%chk=LiuKun1.chk
+#p sto-3g scf=maxcycle=999 freq=noraman IOP(7/33=1) hf
+
+T1
+
+0 1
+H
+N                  1            B1
+C                  2            B2    1            A1
+O                  3            B3    2            A2    1            D1    0
+
+    B1     =     1.052186
+    B2     =     1.39031
+    B3     =     1.203413
+    A1     =     107.14165
+    A2     =     133.227244
+    D1     =     175.809694
+
+

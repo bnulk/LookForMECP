@@ -1,0 +1,20 @@
+%mem=64mb
+%chk=LiuKun2.chk
+#p hf/sto-3g scf=maxcycle=999 opt=z-matrix freq
+ 
+T1
+ 
+0 3
+H
+N                  1            B1
+C                  2            B2    1            A1
+O                  3            B3    2            A2    1            D1    0
+
+    B1     =     1.050837
+    B2     =     1.362651
+    B3     =     1.234589
+    A1     =     107.696454
+    A2     =     134.13593
+    D1     =     182.0
+
+ 
